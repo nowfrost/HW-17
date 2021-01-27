@@ -11,9 +11,13 @@ public:
 	{}
 	Saw(int a1, int b1) : a(a1), b(b1)
 	{}
+	int Getsum()
+	{
+		return a + b;
+	}
 	void show()
 	{
-		std::cout << "\n" << a << " " << b;
+		std::cout << "\n" << a << " " << b << " " << Getsum();
 	}
 };
 
@@ -41,7 +45,7 @@ private:
 
 int main()
 {
-	Saw v(15, 25);
+	Saw v(105, 250);
 	v.show();
 
 	Vector s(10, 20, 30);
